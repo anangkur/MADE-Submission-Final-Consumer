@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">MADE Submission 1</string>
+
+    <!--others-->
+    <string name="text_lorem_ipsum">Lorem Ipsum</string>
+    <string name="text_lorem_ipsum_long">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a eros turpis. Praesent porttitor molestie nisi ut consequat. Nulla placerat nulla elit, in convallis ipsum tincidunt at.</string>
+    <string name="text_release_date">Release Date</string>
+    <string name="text_language">Language</string>
+    <string name="text_popularity">Popularity</string>
+    <string name="text_overview">Overview</string>
+    <string name="text_refresh">tap to reload</string>
+    <string name="text_search">Search</string>
+    <string name="text_daily_notification">Daily Notification</string>
+    <string name="text_daily_notification_description">Daily Notification is a</string>
+    <string name="text_release_notification">New Release Notification</string>
+    <string name="text_release_notification_description">New Release Notification is a</string>
+    <!--end of others-->
+
+    <!--toolbar-->
+    <string name="toolbar_favourite">Favourite</string>
+    <!--end of toolbar-->
+
+    <!--tab-->
+    <string name="tab_movie">Movie</string>
+    <string name="tab_tv">Tv</string>
+    <!--end of tab-->
+
+    <!--tv categories-->
+    <string name="category_popular">Popular</string>
+    <string name="category_new">New</string>
+    <string name="category_rating">Highest Rating</string>
+    <string name="category_now_playing">Now Playing</string>
+    <!--end of tv categories-->
+
+    <!--menu-->
+    <string name="menu_change_language">Change Language</string>
+    <string name="menu_favourite">Favourite</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_notification_setting">Notification Setting</string>
+    <!--end of menu-->
+
+    <!--message-->
+    <string name="message_success_insert">Added to Favourite</string>
+    <string name="message_success_delete">Deleted from Favourite</string>
+    <!--end of message-->
+
+    <!--alarm-->
+    <string name="alarm_daily_title">Daily Reminder</string>
+    <string name="alarm_release_title">New Release Reminder</string>
+    <string name="alarm_daily_message">We have something for you</string>
+    <string name="alarm_release_message">New release! Check it out</string>
+    <string name="alarm_daily_cancel">Daily Reminder Canceled</string>
+    <string name="alarm_release_cancel">Release Reminder Canceled</string>
+    <!--end of alarm-->
+</resources>
