@@ -18,17 +18,122 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/build.gradle">
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/data/DataSource.kt">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/data/MovieProvider.kt">
           <value>
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/data/DataSource.kt">
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/data/local/LocalDataSource.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/data/local/room/ResultDao.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/feature/detail/DetailActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/feature/detail/DetailViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/feature/favourite/FavouriteActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/feature/favourite/movie/FavouriteMovieFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/feature/favourite/tv/FavouriteTvFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/feature/main/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/feature/notificationSetting/NotificationSettingActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/feature/search/SearchActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/utils/Const.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/widget/FavouriteWidget.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/widget/MovieWidget.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/java/com/anangkur/madesubmission1/widget/StackRemoteViewsFactory.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/res/layout/activity_notification_setting.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/res/layout/favourite_widget.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/res/layout/item_widget.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/res/values-in/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/res/xml/favourite_widget_info.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MADESubmission1/app/src/main/res/xml/movie_widget_info.xml">
           <value>
             <set />
           </value>
@@ -38,52 +143,7 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/data/Repository.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/data/local/LocalDataSource.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/data/local/room/ListConverter.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/data/local/room/ResultDao.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/data/local/room/ResultDatabase.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/data/model/Dates.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/data/model/Response.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/data/model/Result.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/data/remote/ApiService.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/data/remote/RemoteDataSource.kt">
           <value>
             <set />
           </value>
@@ -98,37 +158,7 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/feature/custom/TabAdapter.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/feature/detail/DetailActionListener.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/feature/detail/DetailActivity.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/feature/detail/DetailViewModel.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/feature/main/FavouriteViewModel.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/feature/main/MainActivity.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/feature/main/MainItemListener.kt">
           <value>
             <set />
           </value>
@@ -143,22 +173,7 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/feature/main/tv/TvAdapter.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/utils/Const.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/utils/Utils.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/utils/ViewModelFactory.kt">
           <value>
             <set />
           </value>
@@ -169,36 +184,6 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/anangkur/madesubmission2/widget/StackRemoteViewsFactory.kt">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/values-in/strings.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/build.gradle">
           <value>
             <set />
           </value>

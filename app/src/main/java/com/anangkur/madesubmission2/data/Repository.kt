@@ -2,13 +2,11 @@ package com.anangkur.madesubmission2.data
 
 import android.database.Cursor
 import com.anangkur.madesubmission2.data.model.Result
-import com.anangkur.madesubmission2.data.DataSource
 import com.anangkur.madesubmission2.data.local.LocalDataSource
 import com.anangkur.madesubmission2.data.model.Response
 import com.anangkur.madesubmission2.data.remote.RemoteDataSource
 
-class Repository(private val localDataSource: LocalDataSource, private val remoteDataSource: RemoteDataSource):
-    DataSource {
+class Repository(private val localDataSource: LocalDataSource, private val remoteDataSource: RemoteDataSource): DataSource {
     override fun saveAlarmState(alarmState: String, type: Int) {
         localDataSource.saveAlarmState(alarmState, type)
     }
