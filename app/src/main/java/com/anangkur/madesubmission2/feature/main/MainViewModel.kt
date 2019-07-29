@@ -10,7 +10,7 @@ import com.anangkur.madesubmission2.data.model.Result
 import com.anangkur.madesubmission2.utils.Const
 import com.anangkur.madesubmission2.utils.Utils
 
-class FavouriteViewModel(application: Application, private val repository: Repository): AndroidViewModel(application){
+class MainViewModel(application: Application, private val repository: Repository): AndroidViewModel(application){
 
     val movieLive = MutableLiveData<List<Result>>()
     val showProgressGetMovie = MutableLiveData<Boolean>()

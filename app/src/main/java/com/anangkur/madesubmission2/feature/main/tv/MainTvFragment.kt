@@ -1,6 +1,5 @@
-package com.anangkur.madesubmission2.feature.main.movie
+package com.anangkur.madesubmission2.feature.main.tv
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,23 +8,22 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.GridLayoutManager
+import com.anangkur.madesubmission2.feature.detail.DetailActivity
 import com.anangkur.madesubmission2.R
 import com.anangkur.madesubmission2.data.model.Result
-import com.anangkur.madesubmission2.feature.detail.DetailActivity
-import com.anangkur.madesubmission2.feature.main.FavouriteViewModel
+import com.anangkur.madesubmission2.feature.main.MainViewModel
 import com.anangkur.madesubmission2.feature.main.MainActivity
 import com.anangkur.madesubmission2.feature.main.MainItemListener
-import com.anangkur.madesubmission2.feature.main.tv.TvAdapter
 import com.anangkur.madesubmission2.utils.Const
-import kotlinx.android.synthetic.main.fragment_favourite_movie.*
+import kotlinx.android.synthetic.main.fragment_favourite_tv.*
 
-class FavouriteMovieFragment : Fragment(), MainItemListener {
+class MainTvFragment : Fragment(), MainItemListener {
 
-    private lateinit var viewModel: FavouriteViewModel
+    private lateinit var viewModel: MainViewModel
     private lateinit var favMovieAdapter: TvAdapter
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_favourite_movie, container, false)
+        return inflater.inflate(R.layout.fragment_favourite_tv, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -38,14 +36,14 @@ class FavouriteMovieFragment : Fragment(), MainItemListener {
     private fun setupViewModel(){
         viewModel = (requireActivity() as MainActivity).viewModel
         viewModel.apply {
-            movieLive.observe(this@FavouriteMovieFragment, Observer {
+            tvLive.observe(this@MainTvFragment, Observer {
                 favMovieAdapter.setRecyclerData(it)
                 layout_error_fav.visibility = View.GONE
             })
-            showErrorGetMovie.observe(this@FavouriteMovieFragment, Observer {
+            showErrorGetTv.observe(this@MainTvFragment, Observer {
                 layout_error_fav.visibility = View.VISIBLE
             })
-            showProgressGetMovie.observe(this@FavouriteMovieFragment, Observer {
+            showProgressGetTv.observe(this@MainTvFragment, Observer {
                 if (it){
                     pb_recycler_fav.visibility = View.VISIBLE
                     layout_error_fav.visibility = View.GONE
@@ -66,6 +64,6 @@ class FavouriteMovieFragment : Fragment(), MainItemListener {
     }
 
     override fun onClickItem(data: Result) {
-        DetailActivity().startActivity(requireActivity(), data, Const.TYPE_MOVIE, Const.requestCodeFavMovie)
+        DetailActivity().startActivity(requireActivity(), data, Const.TYPE_TV, Const.requestCodeFavTv)
     }
 }

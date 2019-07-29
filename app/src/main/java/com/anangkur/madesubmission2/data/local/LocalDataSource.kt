@@ -5,7 +5,6 @@ import android.database.Cursor
 import android.net.Uri
 import android.os.AsyncTask
 import com.anangkur.madesubmission2.data.DataSource
-import com.anangkur.madesubmission2.data.MovieProvider
 import com.anangkur.madesubmission2.utils.Const
 import com.anangkur.madesubmission2.data.model.Result
 import com.anangkur.madesubmission2.utils.Utils
@@ -44,7 +43,7 @@ class LocalDataSource(private val preferenceHelper: SharedPreferenceHelper, priv
     override fun getAllResult(callback: DataSource.ProviderCallback) {
         class Task : AsyncTask<Void, Void, Cursor>(){
             override fun doInBackground(vararg p0: Void?): Cursor? {
-                return context.contentResolver.query(MovieProvider().URI_MOVIE, null, null, null, null)
+                return context.contentResolver.query(Const.URI_MOVIE, null, null, null, null)
             }
             override fun onPostExecute(result: Cursor?) {
                 callback.onPostExcecute(result)
@@ -59,7 +58,7 @@ class LocalDataSource(private val preferenceHelper: SharedPreferenceHelper, priv
     override fun getResultById(id: Int, callback: DataSource.ProviderCallback) {
         class Task : AsyncTask<Void, Void, Cursor>(){
             override fun doInBackground(vararg p0: Void?): Cursor? {
-                return context.contentResolver.query(Uri.parse("${MovieProvider().URI_MOVIE}/$id"), null, null, null, null)
+                return context.contentResolver.query(Uri.parse("${Const.URI_MOVIE}/$id"), null, null, null, null)
             }
             override fun onPostExecute(result: Cursor?) {
                 callback.onPostExcecute(result)
@@ -74,7 +73,7 @@ class LocalDataSource(private val preferenceHelper: SharedPreferenceHelper, priv
     override fun bulkInsertResult(data: Result, callback: DataSource.ProviderCallback) {
         class Task : AsyncTask<Void, Void, Uri>(){
             override fun doInBackground(vararg p0: Void?): Uri? {
-                return context.contentResolver.insert(MovieProvider().URI_MOVIE, Utils.convertResultToContentValue(data))
+                return context.contentResolver.insert(Const.URI_MOVIE, Utils.convertResultToContentValue(data))
             }
             override fun onPostExecute(result: Uri?) {
                 callback.onPostExcecute()
@@ -89,7 +88,7 @@ class LocalDataSource(private val preferenceHelper: SharedPreferenceHelper, priv
     override fun deleteResult(data: Result, callback: DataSource.ProviderCallback) {
         class Task : AsyncTask<Void, Void, Int>(){
             override fun doInBackground(vararg p0: Void?): Int? {
-                return context.contentResolver.delete(Uri.parse("${MovieProvider().URI_MOVIE}/${data.id}"), "${Const.COLUMN_ID}=${data.id}", null)
+                return context.contentResolver.delete(Uri.parse("${Const.URI_MOVIE}/${data.id}"), "${Const.COLUMN_ID}=${data.id}", null)
             }
             override fun onPostExecute(result: Int?) {
                 callback.onPostExcecute()

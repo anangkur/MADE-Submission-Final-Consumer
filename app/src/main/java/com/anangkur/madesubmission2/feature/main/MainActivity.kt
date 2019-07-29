@@ -15,8 +15,8 @@ import com.anangkur.madesubmission2.data.local.LocalDataSource
 import com.anangkur.madesubmission2.data.local.SharedPreferenceHelper
 import com.anangkur.madesubmission2.data.remote.RemoteDataSource
 import com.anangkur.madesubmission2.feature.custom.TabAdapter
-import com.anangkur.madesubmission2.feature.main.movie.FavouriteMovieFragment
-import com.anangkur.madesubmission2.feature.main.tv.FavouriteTvFragment
+import com.anangkur.madesubmission2.feature.main.movie.MainMovieFragment
+import com.anangkur.madesubmission2.feature.main.tv.MainTvFragment
 import com.anangkur.madesubmission2.utils.ViewModelFactory
 import kotlinx.android.synthetic.main.activity_detail.toolbar
 import kotlinx.android.synthetic.main.activity_main.*
@@ -24,7 +24,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var tabAdapter: TabAdapter
-    lateinit var viewModel: FavouriteViewModel
+    lateinit var viewModel: MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,7 +41,6 @@ class MainActivity : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        Log.d("ACTIVITY_RESULT", "FavouriteActivity requestCode: $requestCode, resultCode: $resultCode")
         viewModel.getAllData()
     }
 
@@ -56,8 +55,8 @@ class MainActivity : AppCompatActivity() {
         val resourceMovieInActive =  ContextCompat.getDrawable(this,R.drawable.ic_movie_inactive) as Drawable
         val resourceTvActive =  ContextCompat.getDrawable(this,R.drawable.ic_tv_active) as Drawable
         val resourceTvInActive =  ContextCompat.getDrawable(this,R.drawable.ic_tv_inactive) as Drawable
-        tabAdapter.addFragment(FavouriteMovieFragment(), getString(R.string.tab_movie), resourceMovieActive, resourceMovieInActive)
-        tabAdapter.addFragment(FavouriteTvFragment(), getString(R.string.tab_tv), resourceTvActive, resourceTvInActive)
+        tabAdapter.addFragment(MainMovieFragment(), getString(R.string.tab_movie), resourceMovieActive, resourceMovieInActive)
+        tabAdapter.addFragment(MainTvFragment(), getString(R.string.tab_tv), resourceTvActive, resourceTvInActive)
     }
 
     private fun setupViewPager(){
@@ -91,10 +90,6 @@ class MainActivity : AppCompatActivity() {
         tab?.customView = tabAdapter.getSelectedTabView(position, this)
     }
 
-    fun startActivity(context: Context){
-        context.startActivity(Intent(context, MainActivity::class.java))
-    }
-
     private fun setupViewModel(){
         viewModel = ViewModelProviders.of(
             this,
@@ -108,7 +103,7 @@ class MainActivity : AppCompatActivity() {
                     RemoteDataSource
                 )
             )
-        ).get(FavouriteViewModel::class.java)
+        ).get(MainViewModel::class.java)
 
         viewModel.apply {}
     }

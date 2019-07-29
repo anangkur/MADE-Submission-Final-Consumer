@@ -1,18 +1,16 @@
 package com.anangkur.madesubmission2.utils
 
+import android.net.Uri
+
 object Const {
+
     const val EXTRA_DETAIL = "EXTRA_DETAIL"
     const val EXTRA_TYPE = "EXTRA_TYPE"
-    const val EXTRA_ALARM_MESSAGE = "EXTRA_ALARM_MESSAGE"
-    const val EXTRA_NOTIF_ID = "EXTRA_NOTIF_ID"
-    const val EXTRA_ALARM_TITLE = "EXTRA_ALARM_TITLE"
 
     const val PREF_LANGUAGE = "PREF_LANGUAGE"
     const val PREF_FIREBASE_MESSAGING_TOKEN = "PREF_FIREBASE_MESSAGING_TOKEN"
     const val PREF_ALARM_STATE_DAILY = "PREF_ALARM_STATE_DAILY"
     const val PREF_ALARM_STATE_RELEASE = "PREF_ALARM_STATE_RELEASE"
-
-    const val BUNDLE_RESULT = "BUNDLE_RESULT"
 
     const val DATABASE_RESULT = "DATABASE_RESULT"
     const val COLUMN_ID = "COLUMN_ID"
@@ -43,14 +41,9 @@ object Const {
     const val typeAlarmDaily = 100
     const val typeAlarmRelease = 101
 
-    const val notificationChannelId = "10001"
-
-    const val alarmStateActive = "Active"
-    const val alarmStateInActive = "InActive"
-
-    const val alarmDailyTime = "07:00:00"
-    const val alarmNewReleaseTime = "08:00:00"
-
     const val favouriteStateTrue = "TRUE"
     const val favouriteStateFalse = "FALSE"
+
+    private const val AUTHORITY = "com.anangkur.madesubmission1.provider"
+    val URI_MOVIE: Uri = Uri.parse("content://$AUTHORITY/$DATABASE_RESULT")
 }
