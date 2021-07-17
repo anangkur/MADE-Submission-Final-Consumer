@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.anangkur.madesubmission2">
+          package="com.anangkur.movieku.consumer">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
@@ -14,13 +14,13 @@
             android:roundIcon="@drawable/movie_ku_consumer"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".feature.main.MainActivity">
+        <activity android:name="com.anangkur.movieku.consumer.feature.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".feature.detail.DetailActivity"/>
+        <activity android:name="com.anangkur.movieku.consumer.feature.detail.DetailActivity"/>
     </application>
 
 </manifest>
